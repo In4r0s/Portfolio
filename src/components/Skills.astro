@@ -12,9 +12,9 @@ const skills = {
 
 ---
 
-<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<div class=" grid grid-cols-1 lg:grid-cols-3 gap-3">
   {Object.entries(skills).map(([skill, url]) => (
-    <div class="bg-gray-700  p-4 border rounded shadow flex items-center space-x-4 hover:scale-110">
+    <div class="bg-gray-700 p-4 border rounded shadow flex items-center space-x-4 hover:scale-110">
       <img src={url} alt={skill} class="w-8 h-8" />
       <span>{skill}</span>
     </div>
