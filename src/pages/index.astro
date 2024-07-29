@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+
+import BackgroundPattern from '../assets/img/Background Pattern.svg';
+
+import Hero from '../components/Hero.astro';
+import Nav from '../components/Nav.astro';
+import Layout from '../layouts/Layout.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<Layout title="Francisco Henríquez - Portfolio.">
+	<picture class="fixed -z-10 right-0">
+		<Image src={BackgroundPattern} alt={"Background Pattern"}/>
+	</picture>
+	<main class="z-10 mx-10">
+		<Nav/>
+		<Hero/>
+		<About/>
+		<Footer/>
+		
+	</main>
+</Layout>
+

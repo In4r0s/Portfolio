@@ -1,0 +1,22 @@
+---
+const skills = {
+  HTML: 'https://api.iconify.design/ri:html5-line.svg',
+  CSS: 'https://api.iconify.design/ri:css3-fill.svg',
+  JavaScript: 'https://api.iconify.design/ri:javascript-fill.svg',
+  React: 'https://api.iconify.design/ri:reactjs-line.svg',
+  Astro: 'https://astro.js.org/astro.png',
+  TailwindCSS: 'https://api.iconify.design/ri:tailwind-css-fill.svg',
+  Git: 'https://api.iconify.design/ri:git-branch-fill.svg',
+  GitHub: 'https://api.iconify.design/ri:github-line.svg',
+};
+
+---
+
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+  {Object.entries(skills).map(([skill, url]) => (
+    <div class="bg-gray-700  p-4 border rounded shadow flex items-center space-x-4 hover:scale-110">
+      <img src={url} alt={skill} class="w-8 h-8" />
+      <span>{skill}</span>
+    </div>
+  ))}
+</div>

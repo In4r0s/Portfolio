@@ -1,0 +1,28 @@
+---
+const logo = "<FH>"
+---
+
+<nav class="nav fixed py-2 top-5 left-8 right-8 rounded-2xl z-50">
+  <div class="flex justify-between items-center mx-5">
+    <div class="flex justify-center py-1 ">
+      <span class="text-white text-3xl italic">{logo}</span>
+    </div>
+    <ul class="flex gap-4 text-white ">
+      <li class="py-1 px-2 outline outline-1 hover:outline-[#67727E] hover:text-[#67727E] rounded-xl cursor-pointer  text-white outline-[#CED4DA]  ">
+        <a href="#home">Sobre mí</a>
+      </li>
+      <li class="py-1 px-2 outline outline-1 outline-[#CED4DA] bg-[#CED4DA] text-[#090A0A] rounded-xl cursor-pointer hover:bg-[#090A0A] hover:text-white  hover:outline-[#CED4DA]  ">
+        <a href="mailto:example@example.com?subject=Contacto&body=Hola, me gustaría contactar contigo.">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    background: #050505;
+    box-shadow:
+      -2px -2px 12px #0c0c0d,
+      2px 2px 12px #1c1e1f;
+  }
+</style>
