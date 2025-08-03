@@ -3,69 +3,85 @@ import Proyects from "./Proyects.astro";
 import Skills from "./Skills.astro";
 ---
 
-<section class="w-full h-auto flex flex-col justify-center items-center">
-  <div class="flex flex-col justify-center items-center max-w-[52rem] mt-12">
-    <ol class="relative border-s border-gray-200 dark:border-gray-700">
-      <li class="mb-10 ms-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-        >
-        </div>
-        <div class="container grid grid-cols-1  mt-8 gap-4 ">
-          <h3 class="text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Experiencia</h3>
-        
-          <div class=" bg-gray-700 shadow-md rounded-lg p-6 mb-6">
-            <h3 class="text-xl font-semibold mb-4 text-gray-400">Administrador de CMS WordPress</h3>
-            <h4 class="text-xl font-medium mb-2 text-gray-400">Responsabilidades:</h4>
-            <ul class="list-disc list-inside text-gray-400">
-              <li>Rediseño de secciones del sitio web para mejorar la experiencia del usuario.</li>
-              <li>Actualización constante de contenidos, garantizando información precisa y actualizada.</li>
-              <li>Realización de respaldos regulares para asegurar la integridad y disponibilidad del sitio.</li>
-              <li>Administración de hosting, asegurando el correcto funcionamiento y optimización del servidor.</li>
-            </ul>
-          </div>
-        
-          <div class="bg-gray-700 shadow-md rounded-lg p-6 mb-6">
-            <h3 class="text-xl font-semibold mb-4 text-gray-400">Práctica Profesional en Apprende</h3>
-            <h4 class="text-xl font-medium mb-2 text-gray-400">Responsabilidades:</h4>
-            <ul class="list-disc list-inside text-gray-400">
-              <li>Realización de diversas pruebas técnicas para asegurar la calidad y funcionalidad de las aplicaciones.</li>
-              <li>Desarrollo de una landing page para el proyecto TherappyHub, enfocada en atraer y convertir visitantes en clientes potenciales.</li>
-              <li>Colaboración en un entorno de equipo para cumplir con los plazos y objetivos del proyecto.</li>
-            </ul>
-          </div>
-        </div>
-        
-      </li>
-      <li class="mb-10 ms-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-        >
-        </div>
-        <h3
-          class="text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
-        >
-          Habilidades
-        </h3>
-        <section class="grid grid-cols-1  mt-8 gap-4">
-          <Skills>
-        </section>
-      </li>
+<section class="w-full min-h-screen flex flex-col justify-center items-center px-4 py-16">
+  <div class="flex flex-col justify-center items-center max-w-6xl w-full">
+    <div class="relative w-full">
       
-      <li class="mb-10 ms-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-        >
+      <!-- Experience Section -->
+      <div class="mb-20">
+        <div class="flex items-center mb-12">
+          <div class="w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full mr-4"></div>
+          <h2 class="text-transparent text-3xl md:text-4xl font-bold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Experiencia
+          </h2>
         </div>
-        <h3
-          class="text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
-        >
-          Proyectos
-        </h3>
-        <section class="mt-8">
-          <Proyects />
-        </section>
-      </li>
-    </ol>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <article class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+            <h3 class="text-xl font-bold mb-4 text-white">Administrador de CMS WordPress</h3>
+            <h4 class="text-lg font-medium mb-4 text-purple-300">Responsabilidades:</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Rediseño de secciones del sitio web para mejorar la experiencia del usuario.
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Actualización constante de contenidos, garantizando información precisa y actualizada.
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Realización de respaldos regulares para asegurar la integridad y disponibilidad del sitio.
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Administración de hosting, asegurando el correcto funcionamiento y optimización del servidor.
+              </li>
+            </ul>
+          </article>
+        
+          <article class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+            <h3 class="text-xl font-bold mb-4 text-white">Práctica Profesional en Apprende</h3>
+            <h4 class="text-lg font-medium mb-4 text-purple-300">Responsabilidades:</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Realización de diversas pruebas técnicas para asegurar la calidad y funcionalidad de las aplicaciones.
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Desarrollo de una landing page para el proyecto TherappyHub, enfocada en atraer y convertir visitantes en clientes potenciales.
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Colaboración en un entorno de equipo para cumplir con los plazos y objetivos del proyecto.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      
+      <!-- Skills Section -->
+      <div class="mb-20">
+        <div class="flex items-center mb-12">
+          <div class="w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full mr-4"></div>
+          <h2 class="text-transparent text-3xl md:text-4xl font-bold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Habilidades
+          </h2>
+        </div>
+        <Skills />
+      </div>
+      
+      <!-- Projects Section -->
+      <div id="proyectos" class="mb-20">
+        <div class="flex items-center mb-12">
+          <div class="w-4 h-4 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full mr-4"></div>
+          <h2 class="text-transparent text-3xl md:text-4xl font-bold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Proyectos
+          </h2>
+        </div>
+        <Proyects />
+      </div>
+    </div>
   </div>
 </section>

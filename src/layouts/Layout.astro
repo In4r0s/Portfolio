@@ -8,23 +8,72 @@ interface Props {
 const { title } = Astro.props;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Francisco Henríquez - Desarrollador Frontend especializado en React, Astro y Tailwind CSS. Creando experiencias digitales modernas y funcionales." />
+		<meta name="keywords" content="desarrollador frontend, React, Astro, Tailwind CSS, JavaScript, HTML, CSS, portafolio" />
+		<meta name="author" content="Francisco Henríquez" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="theme-color" content="#8B5CF6" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Desarrollador Frontend especializado en crear experiencias digitales modernas y funcionales." />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content="Desarrollador Frontend especializado en crear experiencias digitales modernas y funcionales." />
+		
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
-		
 	</body>
 </html>
 <style is:global>
+	* {
+		box-sizing: border-box;
+	}
+	
 	html {
 		font-family: 'Quicksand Variable', sans-serif;
 		background: #050505;
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+		line-height: 1.6;
+		color: #ffffff;
+		overflow-x: hidden;
+	}
+	
+	/* Focus styles for accessibility */
+	*:focus {
+		outline: 2px solid #8B5CF6;
+		outline-offset: 2px;
+	}
+	
+	/* Smooth scrolling for anchor links */
+	@media (prefers-reduced-motion: no-preference) {
+		html {
+			scroll-behavior: smooth;
+		}
+	}
+	
+	/* High contrast mode support */
+	@media (prefers-contrast: high) {
+		.text-gray-400 {
+			color: #ffffff !important;
+		}
+		.border-gray-700 {
+			border-color: #ffffff !important;
+		}
 	}
 </style>

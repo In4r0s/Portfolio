@@ -8,19 +8,22 @@ import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
 import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
-
 ---
 
 <Layout title="Francisco Henríquez - Portfolio.">
-	<picture class="fixed -z-10 right-0">
-		<Image src={BackgroundPattern} alt={"Background Pattern"}/>
+	<picture class="fixed -z-10 right-0 opacity-20">
+		<Image 
+			src={BackgroundPattern} 
+			alt="Patrón de fondo decorativo"
+			loading="eager"
+		/>
 	</picture>
-	<main class="z-10 mx-10">
+	
+	<main class="relative z-10">
 		<Nav/>
 		<Hero/>
 		<About/>
 		<Footer/>
-		
 	</main>
 </Layout>
 
