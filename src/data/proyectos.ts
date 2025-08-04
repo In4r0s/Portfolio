@@ -1,42 +1,42 @@
 export const proyectos = [
   {
-    nombre: 'Therappyhub',
-    descripcion: 'Plataforma digital para conectar pacientes con terapeutas especializados, facilitando el acceso a servicios de salud mental.',
-    imagen: 'https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tecnologias: ['Astro', 'Tailwind', 'React'],
-    link: 'https://therappyhub.com',
-    github: 'https://github.com/In4r0s/therappyhub'
+    nombre: "Therappyhub",
+    descripcion:
+      " Proyecto de práctica profesional. Plataforma digital para conectar pacientes con terapeutas especializados, facilitando el acceso a servicios de salud mental.",
+    imagen:
+      "https://res.cloudinary.com/dfnl7pw65/image/upload/v1754267519/426shots_so_xlw2nv.webp",
+    tecnologias: ["Astro", "Tailwind", "React"],
+    link: "https://therappyhub.com",
+    github: "",
+  },
+
+  {
+    nombre: "Fundación Creciente",
+    descripcion:
+      "Sitio institucional de una fundación enfocada a la formación, difusión e investigación de las culturas de las Américas.",
+    imagen:
+      "https://res.cloudinary.com/dfnl7pw65/image/upload/v1754267287/946shots_so_h2hxut.webp",
+    tecnologias: ["Astro", "React", "Tailwind", "Node.js"],
+    link: "https://fundacioncreciente.cl",
+    github: "",
   },
   {
-    nombre: 'Clinibook',
-    descripcion: 'Sistema de gestión de citas médicas que permite a pacientes agendar consultas y a médicos administrar su agenda.',
-    imagen: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tecnologias: ['Astro', 'Tailwind'],
-    link: 'https://clinibook.com',
-    github: 'https://github.com/In4r0s/clinibook'
+    nombre: "Orquesta de las Américas",
+    descripcion:
+      "Página web para la orquesta de las Américas, que busca promover la música y la cultura latinoamericana.",
+    imagen:
+      "https://res.cloudinary.com/dfnl7pw65/image/upload/v1754267911/167shots_so_hfaidv.webp",
+    tecnologias: ["Astro", "React", "Tailwind"],
+    link: "https://orquestadelasamericas.cl",
+    github: "",
   },
   {
-    nombre: 'Fundación Creciente',
-    descripcion: 'Sitio institucional de una fundación enfocada en educación comunitaria, promoviendo el desarrollo social y educativo.',
-    imagen: 'https://images.pexels.com/photos/8926553/pexels-photo-8926553.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tecnologias: ['React', 'Tailwind', 'Node.js'],
-    link: 'https://fundacioncreciente.org',
-    github: 'https://github.com/In4r0s/fundacion-creciente'
+    nombre: "Restaurante Mackenna",
+    descripcion: "Carta digital para un restaurante ",
+    imagen:
+      "https://res.cloudinary.com/dfnl7pw65/image/upload/v1754267738/975shots_so_gubxbn.webp",
+    tecnologias: ["React", "Tailwind", "Supabase"],
+    link: "https://www.restaurantmackenna.cl/",
+    github: "https://github.com/In4r0s/carta-hotelMackenna",
   },
-  {
-    nombre: 'Orquesta de las Américas',
-    descripcion: 'Página web cultural con agenda de conciertos, biografías de músicos y promoción de eventos musicales internacionales.',
-    imagen: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tecnologias: ['Astro', 'React', 'Tailwind'],
-    link: 'https://orquestadelasamericas.com',
-    github: 'https://github.com/In4r0s/orquesta-americas'
-  },
-  {
-    nombre: 'Restaurante Mackenna',
-    descripcion: 'Sitio de reservas y menú interactivo para un restaurante de comida fusión con sistema de pedidos online.',
-    imagen: 'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tecnologias: ['React', 'Tailwind', 'Express'],
-    link: 'https://restaurantemackenna.com',
-    github: 'https://github.com/In4r0s/restaurante-mackenna'
-  }
 ];

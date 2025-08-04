@@ -1,61 +1,87 @@
 ---
-const logo = "<FH>"
+const logo = "<FH>";
 ---
 
-<nav class="nav fixed py-4 top-6 left-6 right-6 md:left-12 md:right-12 rounded-2xl z-50 backdrop-blur-md">
+<nav
+  class="nav fixed py-4 top-6 left-6 right-6 md:left-12 md:right-12 rounded-2xl z-50 backdrop-blur-md border border-gray-700/50 shadow-lg shadow-gray-900/20 transition-all duration-300"
+>
   <div class="flex justify-between items-center mx-6 md:mx-8">
     <div class="flex justify-center py-2">
-      <span class="text-white text-2xl md:text-3xl italic font-bold hover:text-purple-300 transition-colors duration-300 cursor-pointer">{logo}</span>
+      <span
+        class="text-white text-2xl md:text-3xl italic font-bold hover:text-purple-300 transition-colors duration-300 cursor-pointer"
+        >{logo}</span
+      >
     </div>
-    
+
     <!-- Desktop Navigation -->
     <ul class="hidden md:flex gap-2 text-white">
-      <li class="py-3 px-6 outline outline-1 hover:outline-purple-400 hover:text-purple-300 hover:bg-purple-500/10 rounded-xl cursor-pointer text-white outline-gray-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25">
+      <li
+        class="py-3 px-6 outline outline-1 hover:outline-purple-400 hover:text-purple-300 hover:bg-purple-500/10 rounded-xl cursor-pointer text-white outline-gray-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+      >
         <a href="#home" class="text-sm font-medium">Sobre mí</a>
       </li>
-      <li class="py-3 px-6 outline outline-1 hover:outline-purple-400 hover:text-purple-300 hover:bg-purple-500/10 rounded-xl cursor-pointer text-white outline-gray-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25">
+      <li
+        class="py-3 px-6 outline outline-1 hover:outline-purple-400 hover:text-purple-300 hover:bg-purple-500/10 rounded-xl cursor-pointer text-white outline-gray-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+      >
         <a href="#proyectos" class="text-sm font-medium">Proyectos</a>
       </li>
-      <li class="py-3 px-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105">
-        <a href="mailto:francisco.henriquez.dev@gmail.com?subject=Contacto&body=Hola, me gustaría contactar contigo." class="text-sm font-medium">Contacto</a>
+      <li
+        class="py-3 px-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105"
+      >
+        <a
+          href="mailto:francisco.henriquez.dev@gmail.com?subject=Contacto&body=Hola, me gustaría contactar contigo."
+          class="text-sm font-medium">Contacto</a
+        >
       </li>
     </ul>
 
     <!-- Mobile Navigation Button -->
-    <button 
+    <button
       id="mobile-menu-button"
       class="md:hidden p-3 text-white hover:text-purple-300 hover:bg-gray-800/50 rounded-xl transition-all duration-300"
       aria-label="Abrir menú de navegación"
       aria-expanded="false"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden mt-6 mx-6 border-t border-gray-600/50 pt-6">
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden mt-6 mx-6 border-t border-gray-600/50 pt-6"
+  >
     <ul class="flex flex-col gap-3">
       <li>
-        <a 
-          href="#home" 
+        <a
+          href="#home"
           class="block py-3 px-4 text-white hover:text-purple-300 hover:bg-gray-800/50 rounded-xl transition-all duration-300 text-sm font-medium"
         >
           Sobre mí
         </a>
       </li>
       <li>
-        <a 
-          href="#proyectos" 
+        <a
+          href="#proyectos"
           class="block py-3 px-4 text-white hover:text-purple-300 hover:bg-gray-800/50 rounded-xl transition-all duration-300 text-sm font-medium"
         >
           Proyectos
         </a>
       </li>
       <li>
-        <a 
-          href="mailto:francisco.henriquez.dev@gmail.com?subject=Contacto&body=Hola, me gustaría contactar contigo." 
+        <a
+          href="mailto:francisco.henriquez.dev@gmail.com?subject=Contacto&body=Hola, me gustaría contactar contigo."
           class="block py-3 px-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-xl transition-all duration-300 text-center text-sm font-medium hover:scale-105"
         >
           Contacto
@@ -66,37 +92,41 @@ const logo = "<FH>"
 </nav>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
     if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', () => {
-        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-        
-        mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
-        mobileMenu.classList.toggle('hidden');
-        
+      mobileMenuButton.addEventListener("click", () => {
+        const isExpanded =
+          mobileMenuButton.getAttribute("aria-expanded") === "true";
+
+        mobileMenuButton.setAttribute(
+          "aria-expanded",
+          (!isExpanded).toString()
+        );
+        mobileMenu.classList.toggle("hidden");
+
         // Update icon with smooth transition
-        const icon = mobileMenuButton.querySelector('svg path');
+        const icon = mobileMenuButton.querySelector("svg path");
         if (icon) {
           if (isExpanded) {
-            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            icon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
           } else {
-            icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            icon.setAttribute("d", "M6 18L18 6M6 6l12 12");
           }
         }
       });
 
       // Close mobile menu when clicking on navigation links
-      const mobileLinks = mobileMenu.querySelectorAll('a');
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          mobileMenuButton.setAttribute('aria-expanded', 'false');
-          const icon = mobileMenuButton.querySelector('svg path');
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          mobileMenuButton.setAttribute("aria-expanded", "false");
+          const icon = mobileMenuButton.querySelector("svg path");
           if (icon) {
-            icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            icon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
           }
         });
       });
@@ -104,48 +134,54 @@ const logo = "<FH>"
 
     // Add smooth scroll behavior for navigation links
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
+    navLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
         e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          const offsetTop = targetElement.offsetTop - 100; // Account for fixed navbar
-          window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-          });
+        const targetId = link.getAttribute("href");
+        if (targetId) {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const offsetTop = (targetElement as HTMLElement).offsetTop - 100; // Account for fixed navbar
+            window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth",
+            });
+          }
         }
       });
     });
 
     // Add active state based on scroll position
-    const sections = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll("section[id]");
     const navItems = document.querySelectorAll('nav a[href^="#"]');
 
     function updateActiveNav() {
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150;
-        const sectionHeight = section.offsetHeight;
-        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-          current = section.getAttribute('id');
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = (section as HTMLElement).offsetTop - 150;
+        const sectionHeight = (section as HTMLElement).offsetHeight;
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+          current = section.getAttribute("id") ?? "";
         }
       });
 
-      navItems.forEach(item => {
-        const href = item.getAttribute('href');
+      navItems.forEach((item) => {
+        const href = item.getAttribute("href");
         const parent = item.parentElement;
-        if (href === `#${current}`) {
-          parent.classList.add('active-nav');
-        } else {
-          parent.classList.remove('active-nav');
+        if (parent) {
+          if (href === `#${current}`) {
+            parent.classList.add("active-nav");
+          } else {
+            parent.classList.remove("active-nav");
+          }
         }
       });
     }
 
-    window.addEventListener('scroll', updateActiveNav);
+    window.addEventListener("scroll", updateActiveNav);
     updateActiveNav(); // Initial call
   });
 </script>
